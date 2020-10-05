@@ -74,7 +74,7 @@
 
 #### Онлайн казино Joycasino
 
-![alt text](https://github.com/shmouk/JACKPOTSmachine/blob/master/Mokups/joycasino.png)
+![alt text](https://github.com/shmouk/JACKPOTSmachine/blob/master/Images/joycasino.png)
 
 Онлайн рулетка.
 
