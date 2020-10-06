@@ -40,7 +40,7 @@
 
 ### 2.2	Интерфейс пользователя<a name="2.2"></a>   
 ### Окно приложения.
-![alt text](https://github.com/shmouk/JACKPOTSmachine/blob/master/Mokups/Start.png)  
+![alt text](https://github.com/shmouk/JACKPOTSmachine/blob/master/Mokups/%20Start.png)  
 
 Из окна главного меню пользователь имеют возможность начать опредленную игру создать или загрузить пользователя.
 
