@@ -12,7 +12,7 @@
     
 ## 1. Диаграмма прецедентов<a name="1"></a> 
 
-![Диаграмма прецедентов](https://github.com/shmouk/JACKPOTSmachine/blob/master/Diagrams/UseCase/UseCase.png)
+![Диаграмма прецедентов](https://github.com/shmouk/JACKPOTSmachine/blob/master/Diagrams/UseCase.png)
 
 
 ## 1.1 Актёры<a name="1.1"></a>
