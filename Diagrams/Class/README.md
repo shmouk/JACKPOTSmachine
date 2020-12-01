@@ -1,2 +1,2 @@
 # Диаграмма классов
-![Диаграмма классов](https://github.com/LiL-Dicky/TaskMaster/blob/master/Диаграммы/Class/Class%20Diagram.png)
+![Диаграмма классов](https://github.com/shmouk/JACKPOTSmachine/blob/master/Diagrams/Class/class.png)
