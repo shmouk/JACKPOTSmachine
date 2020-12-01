@@ -1,2 +1,2 @@
 # Диаграмма развертывания
-![Диаграмма развертывания](https://github.com/LiL-Dicky/TaskMaster/blob/master/Диаграммы/Deployment/Deployment.png)
+![Диаграмма развертывания](https://github.com/shmouk/JACKPOTSmachine/blob/master/Diagrams/Deployment/Deployment.png)
