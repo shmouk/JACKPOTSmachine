@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="virtualcasino.BlackJackGUI">
+   <children>
+      <HBox layoutX="9.0" layoutY="70.0" prefHeight="100.0" prefWidth="800.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="191.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <GridPane fx:id="dealerGrid" gridLinesVisible="true" prefHeight="104.0" prefWidth="655.0" HBox.hgrow="ALWAYS">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="dealerImage2" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="1" />
+                  <ImageView fx:id="dealerImage1" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" />
+                  <ImageView fx:id="dealerImage3" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="2" />
+                  <ImageView fx:id="dealerImage4" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="3" />
+                  <ImageView fx:id="dealerImage5" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="4" />
+                  <ImageView fx:id="dealerImage6" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="5" />
+                  <ImageView fx:id="dealerImage7" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="6" />
+                  <ImageView fx:id="dealerImage8" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="7" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <HBox layoutX="9.0" layoutY="226.0" prefHeight="100.0" prefWidth="800.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="191.0" AnchorPane.topAnchor="225.0">
+         <children>
+            <GridPane fx:id="dealerGrid1" gridLinesVisible="true" prefHeight="100.0" prefWidth="659.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="playerImage1" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" />
+                  <ImageView fx:id="playerImage2" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="1" />
+                  <ImageView fx:id="playerImage3" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="2" />
+                  <ImageView fx:id="playerImage4" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="3" />
+                  <ImageView fx:id="playerImage5" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="4" />
+                  <ImageView fx:id="playerImage6" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="5" />
+                  <ImageView fx:id="playerImage7" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="6" />
+                  <ImageView fx:id="playerImage8" fitHeight="101.0" fitWidth="96.0" pickOnBounds="true" GridPane.columnIndex="7" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children></HBox>
+      <Button fx:id="hitButton" layoutX="120.0" layoutY="341.0" mnemonicParsing="false" onAction="#hitAction" text="Hit" />
+      <Button fx:id="holdButton" layoutX="235.0" layoutY="341.0" mnemonicParsing="false" onAction="#holdAction" text="Hold" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="56.0" prefWidth="583.0" text="Dealers Hand" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="170.0" prefHeight="56.0" prefWidth="583.0" text="Your Hand" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="510.0" layoutY="341.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <Label fx:id="dealerScore" layoutX="889.0" layoutY="110.0" text="Label" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="110.0" />
+      <Label fx:id="playerScore" layoutX="889.0" layoutY="266.0" text="Label" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="265.0" />
+      <Button fx:id="startButton" layoutX="356.0" layoutY="403.0" mnemonicParsing="false" onAction="#startAction" text="Start Hand" />
+      <MenuBar prefHeight="32.0" prefWidth="822.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="betAmountText" layoutX="212.0" layoutY="403.0" prefHeight="31.0" prefWidth="98.0" />
+      <Label layoutX="123.0" layoutY="408.0" text="Bet Amount:" />
+      <Label layoutX="580.0" layoutY="408.0" text="Your Money:" />
+      <Label fx:id="playerMoney" layoutX="714.0" layoutY="408.0" text="0" />
+      <Label fx:id="errorLabel" layoutX="244.0" layoutY="444.0" text="Label" textFill="#f50000" />
+   </children>
+</AnchorPane>
